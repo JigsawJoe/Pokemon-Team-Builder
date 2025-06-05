@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+
+// Only keep the App.css import for now
+import {useState} from 'react';
+import './App.css'; 
+import Greeting from './Greeting'; //This will import the greeting information. 
 
 function App() {
   const [count, setCount] = useState(0)
 
+
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      {/* This is the ONLY content that should be inside the Fragment for now */}
+      <h1>Welcome Trainer. This is Day One of your coding adventure!</h1>
+      <p>Are you ready?</p>
+      <div className="card"> {/* A simple div to contain the button and text */}
+        <button onClick={() => setCount(prevCount => prevCount + 1)}>
+          Count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <p>Click the button above to update your total amount of pokemon</p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* END ADDITION */}
+
+
+      <Greeting />
+      {/* We are going to add name functions under this*/}
+      <Greeting name="JigsawJoe" adventureLevel={13}/>
+      <Greeting name="Timmy Reckless" adventureLevel={93}/>
+      <Greeting name="Aluwing"adventureLevel={72}/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

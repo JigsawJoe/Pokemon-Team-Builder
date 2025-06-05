@@ -12,7 +12,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #0f1016aa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -34,9 +34,34 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 4em;
 }
 
 .read-the-docs {
   color: #888;
 }
+
+
+/* src/App.css */
+
+/* Keep any existing code above, add this at the bottom */
+
+h1 {
+  color: #282f3c; /* A dark subdued grey*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em; /* Makes text 1 times smaller times its default size */
+  text-align: left; /* Makes text be left aligned  */
+}
+
+p {
+  color: #040e66; /* Dark Midnight blue */
+  font-size: .75em; /* Makes text .75 times smaller times its default size */
+  text-align: left; /* Makes text be left aligned  */
+}
+
+  h2 
+  {color: #282f3c; /* A dark subdued grey*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em; /* Makes text 1 times smaller times its default size */
+  text-align: left; /* Makes text be left aligned  */
+  }
