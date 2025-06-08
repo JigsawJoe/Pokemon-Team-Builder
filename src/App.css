@@ -55,7 +55,7 @@ h1 {
 
 p {
   color: #040e66; /* Dark Midnight blue */
-  font-size: .75em; /* Makes text .75 times smaller times its default size */
+  font-size: .8em; /* Makes text .75 times smaller times its default size */
   text-align: left; /* Makes text be left aligned  */
 }
 
@@ -64,4 +64,13 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em; /* Makes text 1 times smaller times its default size */
   text-align: left; /* Makes text be left aligned  */
+
   }
+
+  h3 
+  {color: #282f3c; /* A dark subdued grey*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em; /* Makes text 3 times smaller times its default size */
+  text-align: center; /* Makes text be center aligned  */
+
+}
