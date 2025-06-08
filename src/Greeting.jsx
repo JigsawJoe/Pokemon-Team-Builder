@@ -6,7 +6,7 @@ function Greeting(props) {
   return (
     <div>
       <h2>You are starting to get the hang of it trainer keep up the good work</h2>
-      <p>Keep up the great work {props.name}</p>
+      <p>{props.name}</p>
       <p>Your current Adventure level is: {props.adventureLevel || 'unknown'}</p>
     </div>
   );
